@@ -1,6 +1,16 @@
 [
 {
   "directory": "/Users/tavispalmer/projects/hoohacks2021/build",
+  "command": "/usr/bin/clang++  -I/usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o -c /Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp",
+  "file": "/Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp"
+},
+{
+  "directory": "/Users/tavispalmer/projects/hoohacks2021/build",
+  "command": "/usr/bin/clang++  -I/usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o -c /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp",
+  "file": "/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp"
+},
+{
+  "directory": "/Users/tavispalmer/projects/hoohacks2021/build",
   "command": "/usr/bin/clang++  -I/usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/hoohacks2021.dir/main.cpp.o -c /Users/tavispalmer/projects/hoohacks2021/main.cpp",
   "file": "/Users/tavispalmer/projects/hoohacks2021/main.cpp"
 }

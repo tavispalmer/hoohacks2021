@@ -3,11 +3,13 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
+#include "battleship/Board.hpp"
+
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+
+    Board board(sf::Vector2u(8, 8));
 
     while (window.isOpen())
     {
@@ -19,7 +21,7 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(board);
         window.display();
     }
 

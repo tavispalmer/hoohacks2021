@@ -499,12 +499,12 @@ CMakeFiles/NightlyMemCheck.dir/clean:
 CMakeFiles/hoohacks2021.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=1,2 "Built target hoohacks2021"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=1,2,3,4 "Built target hoohacks2021"
 .PHONY : CMakeFiles/hoohacks2021.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hoohacks2021.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hoohacks2021.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles 0
 .PHONY : CMakeFiles/hoohacks2021.dir/rule

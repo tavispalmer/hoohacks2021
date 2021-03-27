@@ -76,9 +76,35 @@ include CMakeFiles/hoohacks2021.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hoohacks2021.dir/flags.make
 
+CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o: CMakeFiles/hoohacks2021.dir/flags.make
+CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o: ../battleship/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o -c /Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp
+
+CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp > CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.i
+
+CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp -o CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.s
+
+CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o: CMakeFiles/hoohacks2021.dir/flags.make
+CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o: ../battleship/Ship.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o -c /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp
+
+CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp > CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.i
+
+CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp -o CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.s
+
 CMakeFiles/hoohacks2021.dir/main.cpp.o: CMakeFiles/hoohacks2021.dir/flags.make
 CMakeFiles/hoohacks2021.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hoohacks2021.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hoohacks2021.dir/main.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hoohacks2021.dir/main.cpp.o -c /Users/tavispalmer/projects/hoohacks2021/main.cpp
 
 CMakeFiles/hoohacks2021.dir/main.cpp.i: cmake_force
@@ -91,11 +117,15 @@ CMakeFiles/hoohacks2021.dir/main.cpp.s: cmake_force
 
 # Object files for target hoohacks2021
 hoohacks2021_OBJECTS = \
+"CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o" \
+"CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o" \
 "CMakeFiles/hoohacks2021.dir/main.cpp.o"
 
 # External object files for target hoohacks2021
 hoohacks2021_EXTERNAL_OBJECTS =
 
+hoohacks2021: CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o
+hoohacks2021: CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o
 hoohacks2021: CMakeFiles/hoohacks2021.dir/main.cpp.o
 hoohacks2021: CMakeFiles/hoohacks2021.dir/build.make
 hoohacks2021: /usr/local/lib/libsfml-system.2.5.1.dylib
@@ -104,7 +134,7 @@ hoohacks2021: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 hoohacks2021: /usr/local/lib/libsfml-audio.2.5.1.dylib
 hoohacks2021: /usr/local/lib/libsfml-network.2.5.1.dylib
 hoohacks2021: CMakeFiles/hoohacks2021.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hoohacks2021"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tavispalmer/projects/hoohacks2021/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable hoohacks2021"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hoohacks2021.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

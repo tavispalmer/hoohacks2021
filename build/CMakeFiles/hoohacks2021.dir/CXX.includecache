@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
+vector
+-
+SFML/System.hpp
+-
+SFML/Graphics.hpp
+-
+Ship.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
+
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
+SFML/System.hpp
+-
+
 /Users/tavispalmer/projects/hoohacks2021/main.cpp
 iostream
 -
@@ -15,6 +29,8 @@ SFML/Window.hpp
 -
 SFML/Graphics.hpp
 -
+battleship/Board.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
 
 /usr/local/include/SFML/Config.hpp
 TargetConditionals.h

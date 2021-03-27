@@ -539,6 +539,60 @@ Experimental/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
+battleship/Board.o: battleship/Board.cpp.o
+
+.PHONY : battleship/Board.o
+
+# target to build an object file
+battleship/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.o
+.PHONY : battleship/Board.cpp.o
+
+battleship/Board.i: battleship/Board.cpp.i
+
+.PHONY : battleship/Board.i
+
+# target to preprocess a source file
+battleship/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.i
+.PHONY : battleship/Board.cpp.i
+
+battleship/Board.s: battleship/Board.cpp.s
+
+.PHONY : battleship/Board.s
+
+# target to generate assembly for a file
+battleship/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.s
+.PHONY : battleship/Board.cpp.s
+
+battleship/Ship.o: battleship/Ship.cpp.o
+
+.PHONY : battleship/Ship.o
+
+# target to build an object file
+battleship/Ship.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o
+.PHONY : battleship/Ship.cpp.o
+
+battleship/Ship.i: battleship/Ship.cpp.i
+
+.PHONY : battleship/Ship.i
+
+# target to preprocess a source file
+battleship/Ship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.i
+.PHONY : battleship/Ship.cpp.i
+
+battleship/Ship.s: battleship/Ship.cpp.s
+
+.PHONY : battleship/Ship.s
+
+# target to generate assembly for a file
+battleship/Ship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.s
+.PHONY : battleship/Ship.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -606,6 +660,12 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... hoohacks2021"
+	@echo "... battleship/Board.o"
+	@echo "... battleship/Board.i"
+	@echo "... battleship/Board.s"
+	@echo "... battleship/Ship.o"
+	@echo "... battleship/Ship.i"
+	@echo "... battleship/Ship.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

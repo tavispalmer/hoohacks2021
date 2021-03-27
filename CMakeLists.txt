@@ -7,7 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include(CTest)
 enable_testing()
 
-add_executable(hoohacks2021 main.cpp)
+add_executable(hoohacks2021
+                battleship/Board.hpp
+                battleship/Board.cpp
+                battleship/Ship.hpp
+                battleship/Ship.cpp
+                main.cpp)
 
 target_include_directories(hoohacks2021 PUBLIC "/usr/local/include")
 
