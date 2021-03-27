@@ -4,7 +4,7 @@
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
 
-class Ship
+class Ship : public sf::Drawable, public sf::Transformable
 {
 public:
 
@@ -22,7 +22,8 @@ public:
         Battleship,
         Destroyer,
         Submarine,
-        PatrolBoat
+        PatrolBoat,
+        TypeCount
     };
 
     Ship(sf::Vector2i pos, Direction dir, Type type);
@@ -33,11 +34,12 @@ public:
     sf::IntRect getBoundingBox() const;
 
 private:
-    sf::IntRect box;
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
     sf::Vector2i pos;
     Direction dir;
     Type type;
+    sf::IntRect box;
 };
 
 #endif

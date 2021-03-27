@@ -32,6 +32,11 @@ Ship::Ship(sf::Vector2i pos, Ship::Direction dir, Ship::Type type)
     }
 }
 
+void Ship::draw(sf::RenderTarget& target, sf::RenderStates states) const
+{
+    
+}
+
 sf::Vector2i Ship::getPos() const
 {
     return pos;

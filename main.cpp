@@ -17,14 +17,38 @@ Cursor cursor;
 
 enum GameState
 {
+    pickShips,
     playerMove
 } gameState;
 
+/// Get the player's ships
+void pickShips()
+{
+    static Ship::Type shipType = Ship::Carrier;
+    if (shipType >= Ship::TypeCount) {
+        printf("Incorrect Placement. Please try again!");
+    }
+    else {
+        shipType = static_cast<Ship::Type>(shipType + 1);
+    }
+        // todo
+}
+
 /// Gets this player's move
-void getPlayerMove(sf::RenderWindow& window)
+void getPlayerMove()
 {
     // Move the cursor
-    
+    if (controller.rightPressed)
+        cursor.move(sf::Vector2i(1, 0));
+    if (controller.upPressed)
+        cursor.move(sf::Vector2i(0, -1));
+    if (controller.leftPressed)
+        cursor.move(sf::Vector2i(-1, 0));
+    if (controller.downPressed)
+        cursor.move(sf::Vector2i(0, 1));
+
+    window.draw(board);
+    window.draw(cursor);
 }
 
 
@@ -53,7 +77,7 @@ void handleEvents(sf::RenderWindow& window, Controller& controller)
                     break;
                 case sf::Keyboard::Up:
                     controller.up = true;
-                    controller.downPressed = true;
+                    controller.upPressed = true;
                     break;
                 case sf::Keyboard::Left:
                     controller.left = true;
@@ -94,8 +118,8 @@ void handleEvents(sf::RenderWindow& window, Controller& controller)
 int main()
 {
     window.setKeyRepeatEnabled(false);
-
     board.addShip(Ship(sf::Vector2i(4, 4), Ship::East, Ship::Carrier));
+    gameState = playerMove;
 
     while (window.isOpen())
     {
@@ -105,8 +129,8 @@ int main()
 
         switch (gameState)
         {
-            case playerMove: getPlayerMove(window);
-            default: throw std::exception();
+            case playerMove: getPlayerMove(); break;
+            default: throw std::exception(); break;
         }
 
         window.display();

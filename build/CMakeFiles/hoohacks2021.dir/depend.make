@@ -237,6 +237,7 @@ CMakeFiles/hoohacks2021.dir/battleship/Ship.cpp.o: /usr/local/include/SFML/Windo
 
 CMakeFiles/hoohacks2021.dir/main.cpp.o: ../battleship/Board.hpp
 CMakeFiles/hoohacks2021.dir/main.cpp.o: ../battleship/Config.hpp
+CMakeFiles/hoohacks2021.dir/main.cpp.o: ../battleship/Controller.hpp
 CMakeFiles/hoohacks2021.dir/main.cpp.o: ../battleship/Cursor.hpp
 CMakeFiles/hoohacks2021.dir/main.cpp.o: ../battleship/Ship.hpp
 CMakeFiles/hoohacks2021.dir/main.cpp.o: ../main.cpp

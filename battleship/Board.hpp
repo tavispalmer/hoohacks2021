@@ -7,16 +7,17 @@
 #include "Config.hpp"
 #include "Ship.hpp"
 
-class Board : public sf::Drawable, public sf::Transformable
+class Board
 {
 public:
     Board(sf::Vector2u size);
 
     bool addShip(Ship ship);
 
-private:
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    void drawWithShips(sf::RenderWindow& window);
+    void drawWithoutShips(sf::RenderWindow& window);
 
+private:
     sf::VertexArray m_vertices;
 
     sf::Vector2u size;

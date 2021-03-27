@@ -1,0 +1,16 @@
+battleship plan:
+     1. name
+        - glory busters
+     2. players begin in the operational room
+      
+         - per turn, they click on a box
+            - launching a missile in the ocean
+            - launching a missile into a ship
+
+   3. what is left
+       - figure out how to do cross platofrm with people on different computers
+       - add the extensions
+         - sound for ship blowing up
+         - operation room to click boxes
+         - maybe a start page
+         - radar

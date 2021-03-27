@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp
+Board.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
+algorithm
+-
+
 /Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
 vector
 -
@@ -20,11 +26,23 @@ Ship.hpp
 
 /Users/tavispalmer/projects/hoohacks2021/battleship/Config.hpp
 
+/Users/tavispalmer/projects/hoohacks2021/battleship/Controller.hpp
+
+/Users/tavispalmer/projects/hoohacks2021/battleship/Cursor.cpp
+Cursor.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Cursor.hpp
+Config.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Config.hpp
+
 /Users/tavispalmer/projects/hoohacks2021/battleship/Cursor.hpp
 SFML/System.hpp
 -
 SFML/Graphics.hpp
 -
+
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp
+Ship.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
 
 /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
 SFML/System.hpp
@@ -34,6 +52,8 @@ SFML/Graphics.hpp
 
 /Users/tavispalmer/projects/hoohacks2021/main.cpp
 iostream
+-
+exception
 -
 SFML/System.hpp
 -
@@ -45,6 +65,8 @@ battleship/Config.hpp
 /Users/tavispalmer/projects/hoohacks2021/battleship/Config.hpp
 battleship/Board.hpp
 /Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
+battleship/Controller.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Controller.hpp
 battleship/Cursor.hpp
 /Users/tavispalmer/projects/hoohacks2021/battleship/Cursor.hpp
 battleship/Ship.hpp
