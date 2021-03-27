@@ -14,10 +14,10 @@ Board::Board(sf::Vector2u size)
         {
             sf::Vertex* quad = &m_vertices[(i + j * size.x) * 4];
 
-            quad[0].position = sf::Vector2f(i * 16, j * 16);
-            quad[1].position = sf::Vector2f((i + 1) * 16, j * 16);
-            quad[2].position = sf::Vector2f((i + 1) * 16, (j + 1) * 16);
-            quad[3].position = sf::Vector2f(i * 16, (j + 1) * 16);
+            quad[0].position = sf::Vector2f(i * TILE_SIZE, j * TILE_SIZE);
+            quad[1].position = sf::Vector2f((i + 1) * TILE_SIZE, j * TILE_SIZE);
+            quad[2].position = sf::Vector2f((i + 1) * TILE_SIZE, (j + 1) * TILE_SIZE);
+            quad[3].position = sf::Vector2f(i * TILE_SIZE, (j + 1) * TILE_SIZE);
 
             quad[0].color = sf::Color::Blue;
             quad[1].color = sf::Color::Blue;
@@ -27,26 +27,35 @@ Board::Board(sf::Vector2u size)
     }
 }
 
-bool Board::addShip(Ship& ship)
+bool Board::addShip(Ship ship)
 {
     // check to make sure there aren't any ships of the same type already on the board
     for (int i = 0; i < ships.size(); ++i)
         if (ships[i].getType() == ship.getType())
             return false;
 
-    // get the ship length
-    int shipLength;
-    switch (ship.getType())
-    {
-        case Ship::Carrier:    shipLength = 5; break;
-        case Ship::Battleship: shipLength = 4; break;
-        case Ship::Destroyer:
-        case Ship::Submarine:  shipLength = 3; break;
-        case Ship::PatrolBoat: shipLength = 2; break;
-        default:               return false;
-    }
+    // check to make sure the ship is on the board
+    if (ship.getBoundingBox().left < 0 || ship.getBoundingBox().left + ship.getBoundingBox().width > size.x)
+        return false;
+    if (ship.getBoundingBox().top < 0 || ship.getBoundingBox().top + ship.getBoundingBox().height > size.y)
+        return false;
 
+    // add ships to the ship list
     ships.push_back(ship);
+
+    // draw the ship
+    for (int i = ship.getBoundingBox().left; i < ship.getBoundingBox().left + ship.getBoundingBox().width; ++i)
+    {
+        for (int j = ship.getBoundingBox().top; j < ship.getBoundingBox().top + ship.getBoundingBox().height; ++j)
+        {
+            sf::Vertex* quad = &m_vertices[(i + j * size.x) * 4];
+
+            quad[0].color = sf::Color::Red;
+            quad[1].color = sf::Color::Red;
+            quad[2].color = sf::Color::Red;
+            quad[3].color = sf::Color::Red;
+        }
+    }
 
     return true;
 }

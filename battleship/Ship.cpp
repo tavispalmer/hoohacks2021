@@ -18,16 +18,16 @@ Ship::Ship(sf::Vector2i pos, Ship::Direction dir, Ship::Type type)
     switch(dir)
     {
         case Ship::East:
-            box = sf::Rect(pos.x, pos.y, pos.x + shipLength, pos.y + 1);
+            box = sf::Rect(pos.x, pos.y, shipLength, 1);
             break;
         case Ship::North:
-            box = sf::Rect(pos.x, pos.y + 1 - shipLength, pos.x + 1, pos.y + 1);
+            box = sf::Rect(pos.x, pos.y + 1 - shipLength, 1, shipLength);
             break;
         case Ship::West:
-            box = sf::Rect(pos.x + 1 - shipLength, pos.y, pos.x + 1, pos.y + 1);
+            box = sf::Rect(pos.x + 1 - shipLength, pos.y, shipLength, 1);
             break;
         case Ship::South:
-            box = sf::Rect(pos.x, pos.y, pos.x + 1, pos.y + shipLength);
+            box = sf::Rect(pos.x, pos.y, 1, shipLength);
             break;
     }
 }
@@ -35,6 +35,11 @@ Ship::Ship(sf::Vector2i pos, Ship::Direction dir, Ship::Type type)
 sf::Vector2i Ship::getPos() const
 {
     return pos;
+}
+
+Ship::Direction Ship::getDirection() const
+{
+    return dir;
 }
 
 Ship::Type Ship::getType() const

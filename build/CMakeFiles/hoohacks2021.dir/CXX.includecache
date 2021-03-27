@@ -13,8 +13,18 @@ SFML/System.hpp
 -
 SFML/Graphics.hpp
 -
+Config.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Config.hpp
 Ship.hpp
 /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
+
+/Users/tavispalmer/projects/hoohacks2021/battleship/Config.hpp
+
+/Users/tavispalmer/projects/hoohacks2021/battleship/Cursor.hpp
+SFML/System.hpp
+-
+SFML/Graphics.hpp
+-
 
 /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
 SFML/System.hpp
@@ -31,8 +41,14 @@ SFML/Window.hpp
 -
 SFML/Graphics.hpp
 -
+battleship/Config.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Config.hpp
 battleship/Board.hpp
 /Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
+battleship/Cursor.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Cursor.hpp
+battleship/Ship.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
 
 /usr/local/include/SFML/Config.hpp
 TargetConditionals.h

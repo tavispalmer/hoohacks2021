@@ -566,6 +566,33 @@ battleship/Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Board.cpp.s
 .PHONY : battleship/Board.cpp.s
 
+battleship/Cursor.o: battleship/Cursor.cpp.o
+
+.PHONY : battleship/Cursor.o
+
+# target to build an object file
+battleship/Cursor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Cursor.cpp.o
+.PHONY : battleship/Cursor.cpp.o
+
+battleship/Cursor.i: battleship/Cursor.cpp.i
+
+.PHONY : battleship/Cursor.i
+
+# target to preprocess a source file
+battleship/Cursor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Cursor.cpp.i
+.PHONY : battleship/Cursor.cpp.i
+
+battleship/Cursor.s: battleship/Cursor.cpp.s
+
+.PHONY : battleship/Cursor.s
+
+# target to generate assembly for a file
+battleship/Cursor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hoohacks2021.dir/build.make CMakeFiles/hoohacks2021.dir/battleship/Cursor.cpp.s
+.PHONY : battleship/Cursor.cpp.s
+
 battleship/Ship.o: battleship/Ship.cpp.o
 
 .PHONY : battleship/Ship.o
@@ -663,6 +690,9 @@ help:
 	@echo "... battleship/Board.o"
 	@echo "... battleship/Board.i"
 	@echo "... battleship/Board.s"
+	@echo "... battleship/Cursor.o"
+	@echo "... battleship/Cursor.i"
+	@echo "... battleship/Cursor.s"
 	@echo "... battleship/Ship.o"
 	@echo "... battleship/Ship.i"
 	@echo "... battleship/Ship.s"

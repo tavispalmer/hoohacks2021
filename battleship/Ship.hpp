@@ -28,6 +28,7 @@ public:
     Ship(sf::Vector2i pos, Direction dir, Type type);
 
     sf::Vector2i getPos() const;
+    Direction getDirection() const;
     Type getType() const;
     sf::IntRect getBoundingBox() const;
 
