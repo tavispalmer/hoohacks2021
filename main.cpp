@@ -25,5 +25,7 @@ int main()
         window.display();
     }
 
+    std::cout << "hello world\n";
+
     return 0;
 }
