@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/tavispalmer/projects/hoohacks2021/battleship/Board.cpp
+Board.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
+algorithm
+-
+
 /Users/tavispalmer/projects/hoohacks2021/battleship/Board.hpp
 vector
 -
@@ -16,8 +22,14 @@ SFML/Graphics.hpp
 Ship.hpp
 /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
 
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.cpp
+Ship.hpp
+/Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
+
 /Users/tavispalmer/projects/hoohacks2021/battleship/Ship.hpp
 SFML/System.hpp
+-
+SFML/Graphics.hpp
 -
 
 /Users/tavispalmer/projects/hoohacks2021/main.cpp
