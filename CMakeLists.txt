@@ -10,6 +10,7 @@ enable_testing()
 add_executable(hoohacks2021
                 battleship/Board.hpp
                 battleship/Board.cpp
+                battleship/Controller.hpp
                 battleship/Cursor.hpp
                 battleship/Cursor.cpp
                 battleship/Ship.hpp
