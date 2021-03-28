@@ -14,14 +14,21 @@ public:
 
     bool addShip(Ship ship);
 
-    void drawWithShips(sf::RenderWindow& window);
-    void drawWithoutShips(sf::RenderWindow& window);
+    void drawOpponent(sf::RenderWindow& window);
+    void drawPlayer(sf::RenderWindow& window);
 
+    bool getOccupied(unsigned int x, unsigned int y) const;
+
+    bool addMarker(unsigned int x, unsigned int y);
+    
 private:
-    sf::VertexArray m_vertices;
+    sf::VertexArray player_vertices;
+    sf::VertexArray opponent_vertices;
+    std::vector<Ship> ships;
+    std::vector<bool> markers;
 
     sf::Vector2u size;
-    std::vector<Ship> ships;
 };
 
 #endif
+
