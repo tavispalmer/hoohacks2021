@@ -27,7 +27,7 @@ public class Textures
         }
         catch (IOException e)
         {
-            System.err.println("Warning! Textures not found");
+            System.err.println("Warning! Texture(s) not found");
         }
     }
 }
