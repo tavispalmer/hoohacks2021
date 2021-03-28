@@ -1,6 +1,0 @@
-#ifndef BATTLESHIP_CONFIG_HPP
-#define BATTLESHIP_CONFIG_HPP
-
-#define TILE_SIZE 128
-
-#endif
