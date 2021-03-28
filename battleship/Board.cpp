@@ -59,10 +59,3 @@ bool Board::addShip(Ship ship)
 
     return true;
 }
-
-void Board::draw(sf::RenderTarget& target, sf::RenderStates states) const
-{
-    states.transform *= getTransform();
-
-    target.draw(m_vertices, states);
-}

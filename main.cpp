@@ -18,7 +18,8 @@ Cursor cursor;
 enum GameState
 {
     pickShips,
-    playerMove
+    playerMove,
+    opponentMove
 } gameState;
 
 /// Get the player's ships
@@ -130,6 +131,7 @@ int main()
         switch (gameState)
         {
             case playerMove: getPlayerMove(); break;
+            case opponentMove: /* getOpponentMove(); */ break;
             default: throw std::exception(); break;
         }
 
@@ -137,4 +139,8 @@ int main()
     }
 
     return 0;
+
+    
+
+
 }

@@ -16,16 +16,27 @@ battleship plan:
          - radar
 
 
-ALRIGHT HERE IS A PLAN:
-    1. Coding 
-    2. 
-    3. 
-    4. 
-    5. 
-    6. 
-    7. 
-    8. 
-    9.
-    10.
+BATTLESHIP
+    1. person can be able to place their ships
+        a. classify ships #done
+        b. place em  (grayed out graphics are)
+             i. if there is an invalid placement, then it wil let the use know
 
+    2. bomb other players
+        a. the player (current) has to pick a spot 
+           i. should be associated with the game tiles (xy coordinates, pick with cursor)
+        b. if correct
+           i. the tile turns red
+           ii. graphics of missile hitting the ship
+        c. if incorrect 
+           i. the tile turns white
+           ii. graphics of missile hitting ocean
+    
+    3. make it multiplayer
+         a. 
+
+    4. last thing
+       a. radar
+       b. control room
+       c. opening to the game
 
