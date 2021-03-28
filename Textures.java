@@ -12,7 +12,6 @@ public class Textures
     public static BufferedImage ThreeShip = null;
     public static BufferedImage FourShip = null;
     public static BufferedImage FiveShip = null;
-
     static
     {
         try

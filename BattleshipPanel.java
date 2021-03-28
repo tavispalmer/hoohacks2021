@@ -5,38 +5,67 @@ import javax.swing.*;
 
 public class BattleshipPanel extends JPanel
 {
-    private static final int TILE_SIZE = 160;
-    private static final int WINDOW_WIDTH = TILE_SIZE * 10;
-    private static final int WINDOW_HEIGHT = TILE_SIZE * 10;
+    public static final int TILE_SIZE = 160;
+    public static final int BOARD_WIDTH = 10;
+    public static final int BOARD_HEIGHT = 10;
+    public static final int WINDOW_WIDTH = TILE_SIZE * BOARD_WIDTH;
+    public static final int WINDOW_HEIGHT = TILE_SIZE * BOARD_HEIGHT;
     private BufferedImage image;
     private Input input;
+
+    private Board board;
 
     public BattleshipPanel()
     {
         getPanelGraphics();
+
+        board = new Board();
 
         input = new Input();
         Thread mainThread = new Thread()
         {
             public void run()
             {
-                while (true)
+                try
                 {
-                    input.update();
-                    mainLoop();
+                    SwingUtilities.invokeAndWait(
+                        new Runnable()
+                        {
+                            public void run()
+                            {
+                                mainLoop();
+                                try
+                                {
+                                    Thread.sleep(10);
+                                }
+                                catch (InterruptedException e)
+                                {
+                                    Thread.currentThread().interrupt();
+                                }
+                            }
+                        }
+                    );
+                } catch (Exception e)
+                {
+                    e.printStackTrace();
                 }
             }
         };
         mainThread.start();
         addKeyListener(input.key);
+        addMouseListener(input.mouse);
         setFocusable(true);
     }
 
     public void mainLoop()
-    {
+    {        
         Graphics graphics = getPanelGraphics();
 
-        // code...
+        input.isKeyPressed(KeyEvent.VK_DOWN);
+        input.isKeyPressed(KeyEvent.VK_UP);
+        input.isKeyPressed(KeyEvent.VK_RIGHT);
+        input.isKeyPressed(KeyEvent.VK_LEFT);
+        board.draw(graphics);
 
         repaint();
     }

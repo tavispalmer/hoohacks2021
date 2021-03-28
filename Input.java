@@ -1,10 +1,29 @@
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.Point;
 import java.util.Arrays;
 
 public class Input
 {
     public Key key = new Key();
+    public Mouse mouse = new Mouse();
+
+    public int getX()
+    {
+        return mouseX;
+    }
+
+    public int getY()
+    {
+        return mouseY;
+    }
+
+    public Point getPoint()
+    {
+        return mousePoint;
+    }
 
     public boolean isKeyPressed(int keyCode)
     {
@@ -43,6 +62,30 @@ public class Input
     public void update()
     {
         Arrays.fill(keyPressed, false);
+        mousePressed = false;
+    }
+
+    private class Mouse extends MouseAdapter
+    {
+        public void mousePressed(MouseEvent e)
+        {
+            mouseDown = true;
+            mousePressed = true;
+           
+        }
+
+        public void mouseReleased(MouseEvent e)
+        {
+            mouseDown = false;
+            mousePressed = false;
+        }
+
+        public void mouseMoved(MouseEvent e)
+        {
+            mouseX = e.getX();
+            mouseY = e.getY();
+            mousePoint = e.getPoint();
+        }
     }
 
     private class Key extends KeyAdapter
@@ -99,4 +142,10 @@ public class Input
     private boolean[] keyDown = new boolean[4];
     private boolean[] keyPressed = new boolean[4];
 
+    private boolean mouseDown;
+    private boolean mousePressed;
+
+    private int mouseX;
+    private int mouseY;
+    private Point mousePoint;
 }
